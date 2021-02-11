@@ -1,0 +1,100 @@
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+[aui-field="email"] {
+    background-image: url(https://a11y-resources.com/img/aui-personalisation-icons/field/email_icon.svg), linear-gradient(to right, #000000 25px,#ffffff 100%);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+[aui-field="name"] {
+    background-image: url(https://a11y-resources.com/img/aui-personalisation-icons/field/personal_icon.svg), linear-gradient(to right, #000000 25px,#ffffff 100%);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+[aui-field="bday"] {
+    background-image: url(https://a11y-resources.com/img/aui-personalisation-icons/field/birthday_icon.svg), linear-gradient(to right, #000000 25px,#ffffff 100%); 
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+[aui-action="help"]:before {
+	content: "\f05a"; 
+	font-family: FontAwesome;
+	float:left;
+	margin-right:5px;
+}
+
+[aui-action="confirm"]:before {
+	content: "\f013"; 
+	font-family: FontAwesome;
+	float:left;
+	margin-right:5px;
+}
+
+[aui-destination="terms"]:before {
+	content: "\f187"; 
+	font-family: FontAwesome;
+	float:left;
+	margin-right:5px;
+}
+
+[aui-destination="signin"]:before {
+	content: "\f090"; 
+	font-family: FontAwesome;
+	float:left;
+	margin-right:5px;
+}
+
+[aui-destination="register"]:before {
+	content: "\f2bb"; 
+	font-family: FontAwesome;
+	float:left;
+	margin-right:5px;
+}
+
+[aui-symbol="http://wordnet-rdf.princeton.edu/wn31/warning"] { 
+  width: 50px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  background: orange;
+ background-image: url(https://a11y-resources.com/img/icon_warning.png) ;
+    background-repeat: no-repeat;
+  background-size: contain;
+}
+
+[aui-symbol="http://wordnet-rdf.princeton.edu/wn31/error"] { 
+  width: 50px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  background: red;
+ background-image: url(https://a11y-resources.com/img/icon_error.png) ;
+    background-repeat: no-repeat;
+  background-size: contain;
+}
+
+[role="form"]{
+	border: red 3px dotted;
+}
+
+[role="contentinfo"]{
+	border: blue 3px dotted;
+}
+
+[role="navigation"]{
+	border: purple 3px dotted;
+}
+
+[role="main"]{
+	border: green 3px dotted;
+}

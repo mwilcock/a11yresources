@@ -1,0 +1,735 @@
+
+<html lang="en">
+<!-- Copyright Mark Wilcock -->
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<title>A11Y Resources | WCAG 2.0 Disability Matrix</title>
+
+  <!-- CSS Imports -->
+
+  <link rel="stylesheet" href="https://a11yresources.bitbucket.io/css/main.css">
+  <link rel="stylesheet" href="https://a11yresources.bitbucket.io/css/Matrix-Styling.css">
+  <link rel="stylesheet" href="https://a11yresources.bitbucket.io/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+  <!-- Font Imports -->
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400|Roboto:300,400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam:300|Oswald:500|Roboto+Mono|Yanone+Kaffeesatz" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+  <!-- Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110088214-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110088214-1');
+  </script>
+
+  <style>
+
+  #header-section .breadcrumb{
+    background-color: transparent !important;
+    text-decoration: underline;
+    padding-left: 0;
+    font-style:italic;
+    padding-top: 0;
+
+  }
+
+  #header-section .breadcrumb a{
+    color: white;
+  }
+
+  #header-section .breadcrumb-item.active{
+    color: white;
+    opacity: 0.6;
+  }
+
+  #header-section h1 {
+    color:#FFFFFF;
+    border-bottom: 1px solid #0D2534;
+    font-size:4em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 650;
+  }
+</style>
+
+</head>
+
+<!--Body Start -->
+
+<body screen_capture_injected="true">
+
+	<nav id="site-nav" class="navbar navbar-expand-lg navbar-light fixed-top light-blue-bg">
+
+    <a class="branding" href="https://a11yresources.bitbucket.io/"><i class="fas fa-universal-access"></i><h1>A11Y Resources</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://a11yresources.bitbucket.io/">Getting Started</a>
+        </li>
+        <li class="nav-item active-pos">
+          <a class="nav-link" href="https://a11yresources.bitbucket.io/developer/">Developer Resources</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://a11yresources.bitbucket.io/external-resources.html">External Resources</a>
+        </li>
+
+        <li class="nav-item" aria-hidden="true">
+          <div class='coming-soon-overlay text-center'>Coming Soon</div>
+          <a class="nav-link">Designer Resources</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- End of Header Section --> 
+
+  <!-- Beginning of Main Section -->
+
+  <div id="header-section" class="light-blue-bg">
+
+    <!-- Header Title -->
+
+    <div class="container">
+
+
+     <h1>WCAG 2.0 Disability Matrix</h1>
+     <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://a11yresources.bitbucket.io/">Home</a></li>
+        <li class="breadcrumb-item"><a href="https://a11yresources.bitbucket.io/Developers">Developer Resources</a></li>
+        <li class="breadcrumb-item active" aria-current="page">WCAG 2.0 Disability Matrix</li>
+      </ol>
+    </nav>
+
+  </div>
+</div>
+
+<!-- Main Content & Sub Nav -->
+
+<div class="header-buffer">
+
+</div>
+
+
+<main role="main" class="main-content" id="main-content">
+  <div class="container sub-sections">
+    <!-- Starter paragraph -->
+    <p>
+     The <b>Web Content Accessibility Guidelines</b> (WCAG) are in place to ensure that websites and web applications are built in an accessible manner. The different points within the guidelines help different disabilities and not all points directly impact a user with a specific category of disability or impairment. <br>
+     Within the Matrix below we have categorised disabilities into four categories. these four categories are <b>Cognitive, Visual, Auditory </b> and <b> Mobility</b>; these disabilities can also be <b>Permanent, Temporary </b> or <b>situational</b>.
+
+
+   </p>
+
+   <!-- Matrix key -->
+   <table class="table table-hover table-bordered a_table" id="Matrix_Key">
+    <thead>
+      <tr>
+        <th scope="col">Icon</th>
+        <th scope="col">Meaning</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>Yes</td>
+        <td>Applicable to this disability.</td>
+      </tr>
+
+      <tr>
+        <td>partial</td>
+        <td>Partially applicable to this disability.</td>
+      </tr>  
+
+      <tr>
+        <td>Not app</td>
+        <td>Not directly applicable to this disability.</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+
+  <!-- Title of section -->
+  <h2>Principle 1 - Perceivable</h2>
+
+  <!-- Section description -->
+  <p>
+    This principle ensures content is presented in a way users’ can best understand it.
+  </p>
+  <!-- perceivable table -->
+  <table class="table table-hover table-bordered a_table" id="principle1_table">
+
+    <thead>
+      <tr>
+
+        <!-- Text headers -->
+        <th scope="col">WCAG Point</th>
+        <th scope="col">Point Name</th>
+
+        <!-- Headers with icons -->
+        <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Cognitive.png" class="header_image" alt="Cognitive Disabilities"><br>Cognitive</th>
+        <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Blind.png" class="header_image" alt="Visual Disabilities"><br>Visual</th>
+        <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Deaf.png" class="header_image" alt="Auditory Disabilities"><br>Auditory</th>
+        <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Mobility.png" class="header_image" alt="Mobility Disabilities"><br>Mobility</th>
+
+      </tr>
+    </thead>
+    
+    <tbody>
+
+      <tr>
+        <th scope="row">1.1.1</th>
+        <td>Non-Text Content</td>
+        <td>Not app</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.2.1</th>
+        <td>Audio-Only and Video Only (Pre-Recorded)</td>
+        <td>Not app</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.2.2</th>
+        <td>Captions (Pre-Recorded)</td>
+        <td>Not app</td>
+        <td>Not app</td>
+        <td>Yes</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.2.3</th>
+        <td>Audio Description or Media Alternative (Pre-Recorded)</td>
+        <td>partial</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.2.4</th>
+        <td>Captions (Live)</td>
+        <td>Not app</td>
+        <td>Not app</td>
+        <td>Yes</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.2.5</th>
+        <td>Audio Description (Pre-Recorded)</td>
+        <td>Not app</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.3.1</th>
+        <td>Info and Relationships</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.3.2</th>
+        <td>Meaningful Sequence</td>
+        <td>Not app</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.3.3</th>
+        <td>Sensory Characteristics</td>
+        <td>partial</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.4.1</th>
+        <td>Use of Colour</td>
+        <td>partial</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.4.2</th>
+        <td>Audio Control</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Yes</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.4.3</th>
+        <td>Contrast (Minimum)</td>
+        <td>partial</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.4.4</th>
+        <td>Resize Text</td>
+        <td>Not app</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">1.4.5</th>
+        <td>Images of Text</td>
+        <td>partial</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Not app</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Principle 2 - Operable</h2>
+  <p>
+    This principle ensures all content can be operated by the user regardless of any disabilities.
+  </p>
+
+  <table class="table table-hover table-bordered a_table" id="principle2_table">
+    <thead>
+      <tr>
+        <th scope="col">WCAG Point</th>
+        <th scope="col">Point Name</th>
+        <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Cognitive.png" class="header_image" alt="Cognitive Disabilities"><br>Cognitive</th>
+        <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Blind.png" class="header_image" alt="Visual Disabilities"><br>Visual</th>
+        <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Deaf.png" class="header_image" alt="Auditory Disabilities"><br>Auditory</th>
+        <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Mobility.png" class="header_image" alt="Mobility Disabilities"><br>Mobility</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">2.1.1</th>
+        <td>Keyboard</td>
+        <td>Not app</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2.1.2</th>
+        <td>No Keyboard Trap</td>
+        <td>Not app</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2.2.1</th>
+        <td>Timing Adjustable</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2.2.2</th>
+        <td>Pause, Stop, Hide</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Not app</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2.3.1</th>
+        <td>Three Flashes or Below Threshold</td>
+        <td>Yes</td>
+        <td>partial</td>
+        <td>Not app</td>
+        <td>Not app</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2.4.1</th>
+        <td>Bypass Blocks</td>
+        <td>Not app</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2.4.2</th>
+        <td>Page Titled</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2.4.3</th>
+        <td>Focus Order</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2.4.4</th>
+        <td>Link Purpose (In Context)</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2.4.5</th>
+        <td>Multiple Ways</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2.4.6</th>
+        <td>Headings and Labels</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2.4.7</th>
+        <td>Focus Visible</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Not app</td>
+        <td>Yes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Principle 3 - Understandable</h2>
+  <p>
+   This principle ensures all content and operation of controls is understandable to all users.
+ </p>
+
+ <table class="table table-hover table-bordered a_table" id="principle3_table">
+  <thead>
+    <tr>
+      <th scope="col">WCAG Point</th>
+      <th scope="col">Point Name</th>
+      <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Cognitive.png" class="header_image" alt="Cognitive Disabilities"><br>Cognitive</th>
+      <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Blind.png" class="header_image" alt="Visual Disabilities"><br>Visual</th>
+      <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Deaf.png" class="header_image" alt="Auditory Disabilities"><br>Auditory</th>
+      <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Mobility.png" class="header_image" alt="Mobility Disabilities"><br>Mobility</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th scope="row">3.1.1</th>
+      <td>Language of Page</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not app</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3.1.2</th>
+      <td>Language of Parts</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not app</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3.2.1</th>
+      <td>On Focus</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not app</td>
+      <td>Yes</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3.2.2</th>
+      <td>On Input</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not app</td>
+      <td>Yes</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3.2.3</th>
+      <td>Consistent Navigation</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not app</td>
+      <td>Not app</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3.2.4</th>
+      <td>Consistent Identification</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not app</td>
+      <td>Not app</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3.3.1</th>
+      <td>Error Identification</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not app</td>
+      <td>partial</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3.3.2</th>
+      <td>Labels or Instructions</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not app</td>
+      <td>Yes</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3.3.3</th>
+      <td>Error Suggestion</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not app</td>
+      <td>Yes</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3.3.4</th>
+      <td>Error Prevention (Financial, Legal, Data)</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Principle 4 - Robust</h2>
+<p>
+  This principle maximises application compatibility with assistive technologies and changes to technology in the future. 
+</p>
+
+<table class="table table-hover table-bordered a_table" id="principle4_table">
+ <thead>
+  <tr>
+    <th scope="col">WCAG Point</th>
+    <th scope="col">Point Name</th>
+    <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Cognitive.png" class="header_image" alt="Cognitive Disabilities"><br>Cognitive</th>
+    <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Blind.png" class="header_image" alt="Visual Disabilities"><br>Visual</th>
+    <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Deaf.png" class="header_image" alt="Auditory Disabilities"><br>Auditory</th>
+    <th scope="col"><img src="https://a11yresources.bitbucket.io/icons/Mobility.png" class="header_image" alt="Mobility Disabilities"><br>Mobility</th>
+  </tr>
+</thead>
+
+<tbody>
+  <tr>
+    <th scope="row">4.1.1</th>
+    <td>Parsing</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <th scope="row">4.1.2</th>
+    <td>Name, Role, Value</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+</tbody>
+</table>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $("td:contains('Yes')").html('<img src="https://a11yresources.bitbucket.io/icons/Yes.png" alt="Point Aids this Disability type" height="20px" width="20px"/>');
+  });
+
+  $(document).ready(function () {
+    $("td:contains('partial')").html('<img src="https://a11yresources.bitbucket.io//icons/Circle%20-%20Partial.png" alt="Point partially Aids this Disability type" height="20px" width="20px"/>');
+  });
+
+  $(document).ready(function () {
+    $("td:contains('Not app')").html('<img src="https://a11yresources.bitbucket.io/icons/Dash%20-%20NA.png" alt="Point does not directly benefit this Disability type" height="5px" width="20px"/>');
+  });
+</script>
+
+</div>
+</main>
+<footer id="footer" role="contentinfo">
+
+  <div class="header-buffer"></div>
+
+  <div class="light-blue-bg">
+
+    <div class="container">
+
+      <div class="row col-md-12 footer-social">
+
+        <p style="color: #FF9900; padding-top: 10px;">FOLLOW US ON</p>
+
+        <a class="social-icon-box" href="#" style="background-color: #2D609B; border-bottom:1px solid #28547F;"><i class="fab fa-facebook-f social-icon center-icon-div"></i></a>
+
+        <a class="social-icon-box" href="#" style="background-color: #0EC3F3; border-bottom:1px solid #0EA4C7;"><i class="fab fa-twitter social-icon center-icon-div"></i></a>
+
+        <a class="social-icon-box" href="#" style="background-color: #007AB8; border-bottom:1px solid #02658D;"><i class="fab fa-linkedin-in social-icon center-icon-div"></i></a>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-3">
+
+          <h2>HEADER</h2>
+
+          <ul>
+
+            <li><a aui-destination="accessibilityStatement" href="#">Accessibility Statement</a></li>
+            <li><a aui-destination="contact" href="#">Contact Us</a></li>
+            <li><a  aui-destination="terms" href="#">Privacy and Cookies Policy</a></li>
+            <li><a href="#">Website Feedback</a></li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <h2>HEADER</h2>
+
+          <ul>
+
+            <li><a href="#">Accessibility Statement</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy and Cookies Policy</a></li>
+            <li><a href="#">Website Feedback</a></li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <h2>HEADER</h2>
+
+          <ul>
+
+            <li><a href="#">Accessibility Statement</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy and Cookies Policy</a></li>
+            <li><a href="#">Website Feedback</a></li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-md-3 text-center">
+
+          <p class="branding">A11Y Resources</p>
+
+          <a class="feedback-btn" href="#"><i style="padding-right:5px" class="far fa-comment-alt"></i>Provide Feedback</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dark-blue-bg lower-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <p><i class="far fa-copyright"></i> Copyright</p> 
+
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- end footer --> 
+
+</div>
+</main>
+
+<a href="#top-of-page" class="cd-top">Navigate back to the top of the site</a>
+
+<!-- Script Import -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://a11y-resources.com/js/top-scroll.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

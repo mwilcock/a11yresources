@@ -1,0 +1,512 @@
+<html lang="en">
+<!-- Copyright Mark Wilcock -->
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png"/>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>A11Y Resources | External Resources</title>
+
+  <!-- CSS Imports (Interal & External Imports) -->
+<link rel="stylesheet" href="https://a11yresources.bitbucket.io/css/main.css">
+  
+
+    <link rel="stylesheet" href="https://a11yresources.bitbucket.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+
+
+    <!-- Font Imports -->
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400|Roboto:300,400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam:300|Oswald:500|Roboto+Mono|Yanone+Kaffeesatz" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+  <!-- Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110088214-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110088214-1');
+  </script>
+
+  <style>
+
+  #toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: 213px;
+  }
+
+  .toc_title {
+    font-weight: 700;
+    text-align: left;
+  }
+
+
+  #toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+  }
+
+  .toc_list{
+    padding:0px;
+  }
+
+  .note{
+    background: #fff4cc;
+    border-color: #ffe070;
+    border-left-width: 5px;
+    border-left-style: solid;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+    padding-left: 30px;
+  }
+
+  .centre{
+    display: flex;
+    justify-content: center;
+  }
+
+  .doc-working-draft{
+    background: #2B7481 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    margin-top:20px;
+    color:white;
+  }
+
+  .doc-working-draft p{
+    margin-bottom: 0px;
+  }
+
+  .content-section{
+    padding-top: 90px;
+    margin-top: -90px;
+  }
+
+  .underline-onfocus a:hover, .underline-onfocus a:focus{
+    text-decoration: underline !important;
+  }
+
+  @media (min-width: 960px){
+
+    .stuck {
+      position:fixed;
+      top:80px;
+    }
+
+    .toc_title {
+      font-weight: 700;
+      text-align: center !important;
+    }
+
+  }
+
+  .external-article h3 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 160%;
+    text-decoration: underline dotted;
+  }
+
+
+#header-section .breadcrumb{
+    background-color: transparent !important;
+    text-decoration: underline;
+    padding-left: 0;
+    font-style:italic;
+    padding-top: 0;
+
+}
+
+#header-section .breadcrumb a{
+    color: white;
+}
+
+#header-section .breadcrumb-item.active{
+    color: white;
+    opacity: 0.6;
+}
+
+#header-section h1 {
+    color:#FFFFFF;
+    border-bottom: 1px solid #0D2534;
+    font-size:4em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 650;
+}
+
+</style>
+
+</head>
+
+<!--Body Start -->
+
+<body screen_capture_injected="true" data-spy="scroll" data-target="#toc">
+
+	<nav id="site-nav" class="navbar navbar-expand-lg navbar-light fixed-top light-blue-bg">
+
+    <a class="branding" href="https://a11yresources.bitbucket.io/"><i class="fas fa-universal-access"></i><h1>A11Y Resources</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://a11yresources.bitbucket.io/">Getting Started</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://a11yresources.bitbucket.io/developer/">Developer Resources</a>
+        </li>
+
+
+        <li class="nav-item active-pos">
+          <a class="nav-link" href="https://a11yresources.bitbucket.io/external-resources.html">External Resources</a>
+        </li>
+
+        <li class="nav-item" aria-hidden="true">
+          <div class='coming-soon-overlay text-center'>Coming Soon</div>
+          <a class="nav-link">Designer Resources</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+	<!-- End of Header Section --> 
+
+	<!-- Beginning of Main Section -->
+
+	<div id="header-section" class="light-blue-bg">
+
+		<div class="container">
+
+			<h1>External Resources</h1>
+			<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="https://a11yresources.bitbucket.io/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">External Resources</li>
+  </ol>
+</nav>
+
+		</div>
+	</div>
+
+	<!-- Main Content & Sub Nav -->
+
+	<div class="header-buffer"></div>
+
+  <main role="main" class="external-article main-content" id="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-12">
+          <div class="basic-sticky-example">
+            <div id="toc_container">
+              <h2 class="toc_title">Contents</h2>
+              <ul class="toc_list underline-onfocus">
+                <li><a href="#articles">1. Articles & Blogs</a></li>
+                <li><a href="#style-guides">2. Style Guides</a></li>
+                <li><a href="#checklists">3. Checklists</a></li>
+                <li><a href="#tools">4. Tools</a></li>
+                <li><a href="#assistive-technology">5. Assistive Technology</a></li>
+              </ul>
+            </div>
+
+            <div class="doc-working-draft">
+              <em>Last Updated: 01/12/2017</em>
+            </div>
+          </div>
+        </div> <!-- Column -->
+        <div class="col-lg-9 col-12">
+
+          <section id="articles" class="content-section underline-onfocus">
+            <h2>Articles &amp; Blogs</h2>
+            <hr>
+            <h3 style="padding-top:0px">Techniques</h3>
+            <ul>
+
+              <li><a target="_blank" href="https://medium.com/alistapart/writing-html-with-accessibility-in-mind-a62026493412">Writing HTML with accessibility in mind</a></li>
+
+              <li><a target="_blank" href="https://medium.com/@matuzo/writing-javascript-with-accessibility-in-mind-a1f6a5f467b9">Writing JavaScript with accessibility in mind</a></li>
+
+              <li><a target="_blank" href="https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/">Dos and don'ts on designing for accessibility</a></li>
+
+              <li><a target="_blank" href="https://axesslab.com/accessibility-according-to-pwd/">Accessibility according to actual people with disabilities</a></li>
+ 
+              <li><a target="_blank" href="https://dev.to/_bigblind/how-to-make-your-website-accessible-to-people-who-use-a-screen-magnifier">How to Make Your Website Accessible to People Who Use a Screen Magnifier</a></li>
+
+              <li><a target="_blank" href="https://axesslab.com/make-site-accessible-screen-magnifiers/">How to make your site accessible for screen magnifiers</a></li>
+
+              <li><a target="_blank" href="https://axesslab.com/disabled-buttons-suck/">Disabled buttons suck</a></li>
+
+              <li><a target="_blank" href="http://www.uxbooth.com/articles/accessibility-visual-design/">Accessibility for Visual Design</a></li>
+
+              <li><a target="_blank" href="https://foxland.fi/writing-accessible-content/">Writing Accessible Content</a></li>
+
+              <li><a target="_blank" href="https://uxdesign.cc/designing-accessible-products-e8aa79b55ebc">Designing accessible products</a></li>
+
+              <li><a target="_blank" href="http://simplyaccessible.com/article/descriptive-alt-attributes/">Writing descriptive alt attributes for images</a></li>
+
+              <li><a target="_blank" href="https://axesslab.com/alt-texts/">Alt-texts: The Ultimate Guide</a></li>
+
+              <li><a target="_blank" href="https://ux.shopify.com/in-plain-sight-5639c9afb4c6">In Plain Sight: Text, Contrast, and Accessibility</a></li>
+
+              <li><a target="_blank" href="https://accessibility.blog.gov.uk/2017/02/08/advice-for-creating-content-that-works-well-with-screen-readers/">How to create content that works well with screen readers</a></li>
+
+              <li><a target="_blank" href="https://www.nomensa.com/blog/2017/how-structure-headings-web-accessibility">How to structure headings for web accessibility</a></li>
+
+              <li><a target="_blank" href="https://www.nngroup.com/articles/guidelines-for-visualizing-links/">Guidelines for Visualizing Links</a></li>
+
+            </ul>
+
+            <h3>Videos</h3>
+            
+            <ul>
+
+              <li><a target="_blank" href="https://vimeo.com/222490579">What does User Experience mean when you're blind?</a></li>
+
+              <li><a target="_blank" href="http://www.inclusivedesign24.org/">Inclusive Design 24 (#ID24)</a></li>
+
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=A5XzoDT37iM">Pragmatic Accessibility: A How-To Guide for Teams</a></li>
+
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=H4FzW9oFObs">YES, your site too can (and should) be accessible</a></li>
+
+            </ul>
+
+            <h3>Other</h3>
+            <ul>
+              <li><a target="_blank" href="http://rosenfeldmedia.com/a-web-for-everyone/personas-for-accessible-ux/">Personas for Accessible UX</a></li>
+
+              <li><a target="_blank" href="http://simpleprimate.com/blog/motor">What I've learned about motor impairment</a></li>
+
+              <li><a target="_blank" href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">The Web Should Just Work for Everyone</a></li>
+
+              <li><a target="_blank" href="https://imjustcreative.com/color-blindness/2017/01/26">Color Blindness Demonstration Using Coloured Pencils</a></li>
+
+              <li><a target="_blank" href="http://adrianroselli.com/2017/03/selfish-accessibility-slides-from-talk-at-government-digital-service.html">Selfish accessibility</a></li>
+
+              <li><a target="_blank" href="https://alistapart.com/article/reframing-accessibility-for-the-web">Reframing Accessibility for the Web</a></li>
+
+              <li><a target="_blank" href="http://substantial.com/blog/2014/07/22/how-i-audit-a-website-for-accessibility/">How I Audit a Website for Accessibility</a></li>
+
+              <li><a target="_blank" href="https://iplayer.engineering/ensuring-iplayer-is-accessible-to-all-3d55a419242b">Ensuring iPlayer is accessible to all</a></li>
+            </ul>
+
+          </section>
+
+          <section id="style-guides" class="content-section underline-onfocus">
+            <h2>Style Guides</h2>
+            <hr>
+            <ul>
+              <li><a target="_blank" href="https://material.io/guidelines/usability/accessibility.html">Material Design</a></li>
+
+              <li><a target="_blank" href="http://ianmcburnie.github.io/mindpatterns/">eBay's Mind Patterns</a></li>
+
+              <li><a target="_blank" href="https://facebook.github.io/react/docs/accessibility.html">React</a></li>
+
+              <li><a target="_blank" href="https://polaris.shopify.com/principles/accessibility">Shopify - Polaris</a></li>
+
+              <li><a target="_blank" href="http://styleguide.mailchimp.com/writing-for-accessibility/">MailChimp - Writing for Accessibility</a></li>
+            </ul>
+
+          </section>
+
+          <section id="checklists" class="content-section underline-onfocus">
+            <h2>Checklists</h2>
+            <hr>
+            <ul>
+              <li><a target="_blank" href="https://github.com/Heydon/inclusive-design-checklist/">Inclusive Design Checklist</a></li>
+
+              <li><a target="_blank" href="http://a11yproject.com/checklist.html">A11Y checklist</a></li>
+
+              <li><a target="_blank" href="http://accessibility.voxmedia.com/">Vox Media</a></li>
+
+              <li><a target="_blank" href="https://www.opquast.com/opquast-web-quality-checklist/">Opquast Web Quality Checklist</a></li>
+
+              <li><a target="_blank" href="https://bitsofco.de/the-accessibility-cheatsheet/">The Accessibility Cheatsheet</a></li>
+
+              <li><a target="_blank" href="https://accessibility.18f.gov/checklist/">18F Accessibility Guide Checklist</a></li>
+
+              <li><a target="_blank" href="https://www.wuhcag.com/wcag-checklist/">Wuhcag - WCAG 2.0 checklists</a></li>
+
+              <li><a target="_blank" href="http://www-03.ibm.com/able/guidelines/ci162/accessibility_checklist.html">IBM Accessibility Checklist</a></li>
+            </ul>
+
+          </section>
+
+
+          <section id="assistive-technologies" class="content-section underline-onfocus">
+            <h2>Assistive Technologies</h2>
+            <hr>
+
+            <h3>Screen Readers</h3>
+            <ul>
+              <li><a target="_blank" href="http://www.freedomscientific.com/Products/Blindness/JAWS">Job Access with Speech (JAWS)</a></li>
+
+              <li><a target="_blank" href="https://www.nvaccess.org/">NVDA</a></li>
+
+              <li><a target="_blank" href="https://www.apple.com/accessibility/mac/vision/">VoiceOver</a></li>
+
+              <li><a target="_blank" href="https://yourdolphin.com/product?id=3">SuperNova</a></li>
+
+              <li><a target="_blank" href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en">ChromeVox</a></li>
+
+              <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback&amp;hl=en_GB">TalkBack</a></li>
+
+              <li><a target="_blank" href="https://support.microsoft.com/en-us/help/17173/windows-10-hear-text-read-aloud">Narrator</a></li>
+            </ul>
+            <h3>Speech Recognition</h3>
+            <ul>
+              <li><a target="_blank" href="http://www.nuance.co.uk/dragon/index.htm">Dragon Naturally Speaking</a></li>
+
+            </ul>
+            <h3>Magnifiers</h3>
+            <ul>
+              <li><a target="_blank" href="https://www.zoomtext.com/products/zoomtext-magnifierreader/">ZoomText</a></li>
+              <li><a target="_blank" href="http://www.freedomscientific.com/Products/LowVIsion/MAGic">MAGic</a></li>
+            </ul>
+            <h3>Reading & Writing Aids</h3>
+            <ul>
+              <li><a target="_blank" href="https://www.texthelp.com/en-gb/products/read-write/">TextHelp Read&Write</a></li>
+              <li><a target="_blank" href="https://www.clarosoftware.com/">Claro</a></li>
+            </ul>
+          </section>
+
+        </main>
+
+        <footer id="footer" role="contentinfo">
+
+    <div class="header-buffer"></div>
+
+    <div class="light-blue-bg">
+
+      <div class="container">
+
+        <div class="row col-md-12 footer-social">
+
+          <p style="color: #FF9900; padding-top: 10px;">FOLLOW US ON</p>
+
+          <a class="social-icon-box" href="#" style="background-color: #2D609B; border-bottom:1px solid #28547F;"><i class="fab fa-facebook-f social-icon center-icon-div"></i></a>
+
+          <a class="social-icon-box" href="#" style="background-color: #0EC3F3; border-bottom:1px solid #0EA4C7;"><i class="fab fa-twitter social-icon center-icon-div"></i></a>
+
+          <a class="social-icon-box" href="#" style="background-color: #007AB8; border-bottom:1px solid #02658D;"><i class="fab fa-linkedin-in social-icon center-icon-div"></i></a>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-3">
+
+            <h2>HEADER</h2>
+
+            <ul>
+
+              <li><a aui-destination="accessibilityStatement" href="#">Accessibility Statement</a></li>
+              <li><a aui-destination="contact" href="#">Contact Us</a></li>
+              <li><a  aui-destination="terms" href="#">Privacy and Cookies Policy</a></li>
+              <li><a href="#">Website Feedback</a></li>
+
+            </ul>
+
+          </div>
+
+          <div class="col-md-3">
+
+            <h2>HEADER</h2>
+
+            <ul>
+
+              <li><a href="#">Accessibility Statement</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy and Cookies Policy</a></li>
+              <li><a href="#">Website Feedback</a></li>
+
+            </ul>
+
+          </div>
+
+          <div class="col-md-3">
+
+            <h2>HEADER</h2>
+
+            <ul>
+
+              <li><a href="#">Accessibility Statement</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy and Cookies Policy</a></li>
+              <li><a href="#">Website Feedback</a></li>
+
+            </ul>
+
+          </div>
+
+          <div class="col-md-3 text-center">
+
+            <p class="branding">A11Y Resources</p>
+
+            <a class="feedback-btn" href="#"><i style="padding-right:5px" class="far fa-comment-alt"></i>Provide Feedback</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dark-blue-bg lower-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <p><i class="far fa-copyright"></i> Copyright </p> 
+
+          
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+        <!-- end footer --> 
+
+      </div>
+    </main>
+
+    <a href="#top-of-page" class="cd-top">Navigate back to the top of the site</a>
+
+    <!-- Script Import -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://a11y-resources.com/js/top-scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+    <script src="https://a11y-resources.com/libs/waypoints/jquery.waypoints.js"></script>
+<script src="https://a11y-resources.com/libs/waypoints/jquery.waypoints.min.js"></script>
+<script src="https://a11y-resources.com/libs/waypoints/shortcuts/sticky.min.js"></script>
+<script>
+  var sticky = new Waypoint.Sticky({
+    element: $('.basic-sticky-example')[0]
+  })
+</script>
+
+  </body>
+
+  </html>
